@@ -1,58 +1,45 @@
 # Employee Attrition Prediction & Workforce Analytics
 
 ## 📌 Project Overview
-Employee attrition is a major challenge for organizations, leading to increased hiring costs, reduced productivity, and loss of skilled talent.  
-This project uses **machine learning techniques** to analyze workforce data and predict employees who are at risk of leaving an organization.
+This project focuses on predicting employee attrition using machine learning techniques and analyzing workforce-related factors that influence employee turnover. The goal is to support HR decision-making through data-driven insights.
 
-The study focuses on identifying key factors influencing attrition and building predictive models to support **data-driven HR decision-making**.
-
----
-
-## 🎯 Objectives
-- Analyze employee demographics and job-related factors
-- Identify key drivers of employee attrition
-- Build and compare machine learning models for attrition prediction
-- Improve prediction performance through feature engineering and hyperparameter tuning
+This project was developed as part of a **group coursework** for the BSc (Hons) Data Science program.
 
 ---
 
-## 📊 Dataset
-- Source: Kaggle – Employee Attrition Uncleaned Dataset  
+## 📂 Project Files
+- `Group F.ipynb` – Jupyter Notebook containing data preprocessing, EDA, feature engineering, model training, and evaluation
+- `Group F.html` – Rendered HTML version of the notebook for easy viewing
+- `Emp_attrition_csv.csv` – Employee attrition dataset used for analysis and modeling
+
+---
+
+## 📊 Dataset Information
 - Records: **74,610 employees**
-- Target Variable:
-  - `Attrition` → 0 = Stayed, 1 = Left
+- Target variable: `Attrition`  
+  - 0 → Employee stayed  
+  - 1 → Employee left
 
 ### Key Features
 - Age, Monthly Income, Years at Company
-- Job Role, Gender, Education Level
+- Job Role, Education Level, Gender
 - Work-Life Balance, Job Satisfaction
 - Performance Rating, Promotions
-- Remote Work, Company Size
-
-🔗 Dataset link:  
-https://www.kaggle.com/datasets/nikhilbhosle/employee-attrition-uncleaned-dataset
 
 ---
 
 ## 🛠️ Methodology
 
-### 1. Data Preprocessing
-- Removed duplicates
+### Data Preprocessing
+- Removed duplicate records
 - Handled missing values
-- Outlier treatment using IQR method
-- Dropped irrelevant columns (Employee ID)
+- Outlier detection using IQR method
+- Removed irrelevant columns
 
-### 2. Feature Engineering
-- Promotion Rate
-- Work-Life Balance Score
-- Attrition Risk Score
-- Multicollinearity check using VIF
-
-### 3. Exploratory Data Analysis (EDA)
-- Attrition by age, gender, job role
-- Work-life balance & job satisfaction analysis
-- Income vs attrition trends
-- Correlation heatmap
+### Exploratory Data Analysis (EDA)
+- Attrition trends by age, income, and job role
+- Work-life balance and job satisfaction analysis
+- Correlation analysis between numerical features
 
 ---
 
@@ -61,29 +48,36 @@ https://www.kaggle.com/datasets/nikhilbhosle/employee-attrition-uncleaned-datase
 - Random Forest Classifier
 
 ### Model Performance
-
-| Model | Accuracy | Precision | Recall | F1-Score |
-|------|--------|----------|--------|--------|
-| Logistic Regression | 68.34% | 68% | 68% | 68% |
-| Random Forest (Tuned) | **70.90%** | 71% | 71% | 71% |
-
-- ROC-AUC (Random Forest): **0.79**
-
----
-
-## 🔧 Model Tuning
-- Hyperparameter tuning using `RandomizedSearchCV`
 - Best model: **Random Forest**
-- Improved stability and non-linear pattern detection
+- Accuracy: **70.9%**
+- ROC-AUC: **0.79**
 
 ---
 
 ## 📈 Key Insights
-- Younger employees show higher attrition
-- Poor work-life balance significantly increases attrition risk
-- Lower income employees are more likely to leave
-- Job satisfaction is a strong predictor of retention
+- Employees with poor work-life balance show higher attrition
+- Lower income and shorter tenure increase attrition risk
+- Job satisfaction is a strong predictor of employee retention
 
 ---
 
-## 📂 Project Structure
+## 👥 Coursework Information
+- Degree: BSc (Hons) Data Science
+- Institution: Plymouth University (NSBM Green University)
+- Project Type: Group Coursework
+
+### 👩‍💻 My Contribution
+- Data preprocessing and cleaning
+- Feature engineering
+- Random Forest model training and evaluation
+- Interpretation of results
+
+> This repository is shared for **learning and portfolio purposes only**.
+
+---
+
+## 👩‍💻 Author
+**Meththanie Sumanarathne**  
+Aspiring Data Science Intern  
+📍 Sri Lanka  
+🔗 [LinkedIn](https://linkedin.com/in/meththanie-sumanarathne-1a8569354)
