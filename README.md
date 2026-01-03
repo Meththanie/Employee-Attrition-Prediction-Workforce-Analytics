@@ -9,7 +9,6 @@ This project was developed as part of a **group coursework** for the BSc (Hons) 
 
 ## 📂 Project Files
 - `Group F.ipynb` – Jupyter Notebook containing data preprocessing, EDA, feature engineering, model training, and evaluation
-- `Group F.html` – Rendered HTML version of the notebook for easy viewing
 - `Emp_attrition_csv.csv` – Employee attrition dataset used for analysis and modeling
 
 ---
